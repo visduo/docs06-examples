@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            /** 父盒子固定宽度900px **/
+            width: 900px;
+            border: black 2px solid;
+        }
+        .left {
+            border: green 2px solid;
+            height: 300px;
+            /** 左侧子盒子固定宽度200px **/
+            width: 200px;
+            /** 设置浮动 **/
+            float: left;
+        }
+        .right {
+            border: red 2px solid;
+            height: 500px;
+            /** 右侧子盒子固定宽度500px **/
+            width: 500px;
+            /** 设置浮动 **/
+            float: left;
+        }
+        .clear {
+            /** 子盒子浮动的情况下，清除父盒子塌陷问题 **/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="left">
+        left
+    </div>
+    <div class="right">
+        right
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
