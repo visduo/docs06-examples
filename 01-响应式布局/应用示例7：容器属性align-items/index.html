@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            display: flex;
+            border: black 2px solid;
+            width: 50%;
+            height: 150px;
+        }
+        .item {
+            background-color: green;
+            width: 90px;
+            height: 45px;
+            border: black 1px solid;
+        }
+        .box:nth-of-type(1) {
+            align-items: stretch;
+        }
+        .box:nth-of-type(2) {
+            align-items: flex-start;
+        }
+        .box:nth-of-type(3) {
+            align-items: flex-end;
+        }
+        .box:nth-of-type(4) {
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+<h3>stretch：项目拉伸适应容器</h3>
+<div class="box">
+    <div class="item" style="height: auto">item1</div>
+    <div class="item" style="height: auto">item2</div>
+    <div class="item" style="height: auto">item3</div>
+    <div class="item" style="height: auto">item4</div>
+</div>
+<h3>flex-start：起点对齐</h3>
+<div class="box">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+</div>
+<h3>flex-end：终点对齐</h3>
+<div class="box">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+</div>
+<h3>baseline：基线对齐</h3>
+<div class="box">
+    <div class="item"></div>
+    <div class="item" style="height: 50px"></div>
+    <div class="item" style="height: 60px"></div>
+    <div class="item" style="height: 70px"></div>
+</div>
+</body>
+</html>

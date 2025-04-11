@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            display: flex;
+            border: black 2px solid;
+            width: 50%;
+            height: 90px;
+        }
+        .item {
+            background-color: green;
+            width: 90px;
+            height: 90px;
+            border: black 1px solid;
+        }
+        .item:nth-of-type(1) {
+            order: 2;
+        }
+        .item:nth-of-type(2) {
+            order: 4;
+        }
+        .item:nth-of-type(3) {
+            order: 3;
+        }
+        .item:nth-of-type(4) {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+</div>
+</body>
+</html>
